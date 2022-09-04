@@ -6,7 +6,6 @@
 #     data.append(list(map(int,sys.stdin.readline().rstrip().split())))
 # data.sort(key = lambda x : x[1])
 
-# print(data)
 # temp = data[0][1] - data[0][0]
 # i = 1
 # end = 1 #1번째 index

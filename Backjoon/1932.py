@@ -17,3 +17,8 @@ for i in range(1, n):
             data[i][j] += max(data[i-1][j-1],data[i-1][j])
     k += 1
 print(max(data[n-1]))
+
+"""
+답지를 보고 풀었다.
+좀 더 생각해보고 풀어야겠다
+"""

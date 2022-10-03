@@ -28,5 +28,6 @@ for i in visited[1:]:
     print(i)
 
 """
-rever = True를 왜 생각못했을까..
+rever = True를 왜 생각못했을까.
+다음에는 생각해봐야겠다.
 """

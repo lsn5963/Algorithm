@@ -3,19 +3,19 @@ from collections import deque
 
 n,k = map(int, sys.stdin.readline().rstrip().split())
 
-visited = [0] * 100001 # == [0]*(100001)
+visited = [-1] * 100001 # == [0]*(100001)
 
 def bfs():
     q = deque()
     q.append(n)
-    
+    visited[n] = 0
     while q:
         x = q.popleft()
         if x == k:
             print(visited[x])
             break
-        for nx in (x*2, x+1, x-1):
-            if 0 <= nx < 100001 and visited[nx] == 0:
+        for nx in (x+1, x-1, x*2):
+            if 0 <= nx < 100001 and visited[nx] == -1:
                 if nx == x*2:
                     visited[nx] = visited[x]
                     q.appendleft(nx)

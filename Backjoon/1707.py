@@ -37,3 +37,9 @@ for i in range(k):
         print("YES")
     else:
         print("NO")
+
+
+"""
+구현하기 힘든 문제이다.
+답을 보고 풀었지만... 너무어렵다
+"""

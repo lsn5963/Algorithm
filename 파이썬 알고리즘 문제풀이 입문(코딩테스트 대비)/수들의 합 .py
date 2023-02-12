@@ -2,20 +2,23 @@ n,m = map(int, input().split())
 
 data = list(map(int, input().split()))
 count = 0
-for i in range(n):
-    sum = 0
-    sum += data[i]
-    if sum == m:
-        count += 1
-        continue
-    for j in range(i+1, n):
-        if sum + data[j] == m:
-            count += 1
-            break
-        elif sum + data[j] < m:
-            sum += data[j]
+
+lt, rt = 0, 1
+sum = data[0]
+while True:
+    if sum < m:
+        if rt < n:
+            sum += data[rt]
+            rt += 1
         else:
             break
+    elif sum == m:
+        sum -= data[lt]
+        lt += 1
+        count += 1
+    else:
+        sum -= data[lt]
+        lt += 1
             
 
 print(count)

@@ -21,6 +21,6 @@ while data:
     if check == False:
         break
 
-    
+# enumerate사용해서 풀어야함
         
 print(cnt)

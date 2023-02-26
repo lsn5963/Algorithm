@@ -6,7 +6,7 @@ cnt = 0
 data.sort()
 lt = 0
 rt = len(data)-1
-print(data)
+# print(data)
 while lt<=rt:
     if data[lt] + data[rt] <= m:
         cnt += 1
@@ -14,5 +14,5 @@ while lt<=rt:
         rt -= 1
     else:
         rt -= 1
-print(cnt)
+# print(cnt)
 print(len(data)-(cnt*2) + cnt)

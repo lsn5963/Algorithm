@@ -3,7 +3,7 @@ n = int(input())
 data = [list(map(int, input().split())) for _ in range(n)]
 
 data.sort(key = lambda x : (x[0],x[1]))
-print(data)
+# print(data)
 cnt = 0
 
 for i in range(len(data)):

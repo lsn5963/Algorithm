@@ -1,7 +1,6 @@
 def solution(s):
     s = s.split(" ")
     rst = []
-    # print(s)
     for i in s:
         tmp = []
         for j in range(len(i)):
